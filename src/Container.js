@@ -1,4 +1,4 @@
-import { useCallback, useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import Card from './Card.js';
 import { titles } from './dummyData.js';
 const style = {
@@ -6,12 +6,13 @@ const style = {
 };
 const Container = () => {
   {
-    console.log(titles);
     const [cards, setCards] = useState(titles);
     const moveCard = useCallback((dragIndex, hoverIndex) => {
+      console.log(dragIndex, hoverIndex);
       setCards((prevCards) => {
-        const item = a.splice(dragIndex, 1);
+        const item = prevCards.splice(dragIndex, 1);
         prevCards.splice(hoverIndex, 0, item[0]);
+        console.log(prevCards);
         return prevCards;
       });
     }, []);

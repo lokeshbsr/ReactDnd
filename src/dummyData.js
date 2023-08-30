@@ -27,8 +27,6 @@ const titles = [
     id: 7,
     text: 'PROFIT',
   },
-]
+];
 
-export {
-  titles
-};
+export { titles };
