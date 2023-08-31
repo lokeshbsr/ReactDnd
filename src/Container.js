@@ -12,15 +12,14 @@ const Container = () => {
     const moveCard = useCallback((dragIndex, hoverIndex) => {
       console.log(dragIndex, hoverIndex);
       setCardsRender(false);
-      setCards((prevCards) => {
-        const item = prevCards.splice(dragIndex, 1);
+      setCards((prevCards) =>
         update(prevCards, {
           $splice: [
             [dragIndex, 1],
             [hoverIndex, 0, prevCards[dragIndex]],
           ],
-        });
-      });
+        })
+      );
       setCardsRender(true);
     }, []);
     const renderCard = useCallback((card, i) => {
