@@ -1,30 +1,30 @@
 const titles = [
   {
-    id: 1,
+    id: 11,
     text: 'Write a cool JS library',
   },
   {
-    id: 2,
+    id: 21,
     text: 'Make it generic enough',
   },
   {
-    id: 3,
+    id: 31,
     text: 'Write README',
   },
   {
-    id: 4,
+    id: 41,
     text: 'Create some examples',
   },
   {
-    id: 5,
+    id: 51,
     text: 'Spam in Twitter and IRC',
   },
   {
-    id: 6,
+    id: 61,
     text: '???',
   },
   {
-    id: 7,
+    id: 71,
     text: 'PROFIT',
   },
 ];

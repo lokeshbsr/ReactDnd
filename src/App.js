@@ -7,8 +7,7 @@ import Container from './Container.js';
 export default function App() {
   return (
     <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
+      <p>React Dnd with latest react, antd versions</p>
       <DndProvider backend={HTML5Backend}>
         <Container />
       </DndProvider>
